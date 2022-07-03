@@ -1,22 +1,24 @@
-import React from "react";
+import React from 'react';
+import {Card} from 'react-bootstrap'
 
-const MovieCard = ({ title, description, posterURL, rating, year, stars }) => {
-  return (
-    <div>
-      <h1>{title}</h1>
-      <br />
-      <p>{description}</p>
-      <br />
-      <h2>Rating:{rating}</h2>
-      <br />
-      <h2>Year:{year}</h2>
-      <br />
-      <h3>Top Cast:{stars}</h3>
-      <br />
-      <img src={posterURL} width={500} />
-      <br />
-    </div>
-  );
-};
 
-export default MovieCard;
+
+const MovieCard = ({movie}) => {
+  console.log(movie)
+    return (
+        <div>
+            <Card style={{ width: '18rem', height:"600px", marginTop: "30px", backgroundColor:"	#d2691e" }}>
+  <Card.Img style={{width:"287px", height:"350px"}} variant="top" src={movie.posterUrl}/> 
+  <Card.Body>
+    <Card.Title>{movie.title}</Card.Title>
+    <Card.Text>
+    {movie.description}
+    </Card.Text>
+    
+  </Card.Body>
+</Card>
+        </div>
+    )
+}
+
+export default MovieCard

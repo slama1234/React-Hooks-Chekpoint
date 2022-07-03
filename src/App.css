@@ -3,6 +3,17 @@
   flex-direction: row;
   justify-content: space-around;
 }
-.App{
-  background-color: rgb(206, 187, 224);
+.btnadd {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  
+}
+.App-header{
+  background-color: black;
+}
+.titre {
+  font-family: 'Courier New', monospace;
+  font-weight: 900;
+
 }

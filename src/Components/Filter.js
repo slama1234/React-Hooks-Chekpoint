@@ -1,8 +1,29 @@
+import React from 'react'
+//import ReactStars from "react-rating-stars-component";
 
-import React from "react";
+const SearchText = ({filtertext,filterrate}) => {
+    return (
+        <div style = {{display:"flex", justifyContent: "space-around", alignItems:"center"}}>
+            <h1 style={{color:"red" , fontSize:"80px"}} className="titre"><span style={{color:"white"}}>Your</span>Card</h1>
+        <div style = {{display:"flex"}}>
+            <form className="search">
+        <input
+          onChange={(event)=>filtertext(event.target.value)}
+          placeholder='Search Movies'
 
-const Filter = () => {
-  return <div></div>;
-};
+          type="text"
+        />
 
-export default Filter;
+      </form>
+      {/* <ReactStars
+    count={5}
+    onChange={(newRating)=>filterrate(newRating)}
+    size={24}
+    activeColor="#ffd700"
+  />, */}
+        </div>
+        </div>
+    )
+}
+
+export default SearchText

@@ -1,0 +1,92 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@8.11.0
+2 info using node@v16.15.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 8ms
+6 timing config:load:builtin Completed in 8ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:C:\Users\Extreme Pc\Desktop\GOMYCODE\React-Hooks\react-hooks\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 64ms
+11 timing config:load:file:C:\Users\Extreme Pc\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\Extreme Pc\AppData\Roaming\npm\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 0ms
+18 timing config:load Completed in 79ms
+19 timing npm:load:configload Completed in 80ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 0ms
+22 verbose title npm install react-star-rating-component
+23 verbose argv "install" "react-star-rating-component"
+24 timing npm:load:setTitle Completed in 2ms
+25 timing config:load:flatten Completed in 3ms
+26 timing npm:load:display Completed in 4ms
+27 verbose logfile logs-max:10 dir:C:\Users\Extreme Pc\AppData\Local\npm-cache\_logs
+28 verbose logfile C:\Users\Extreme Pc\AppData\Local\npm-cache\_logs\2022-07-03T20_36_41_926Z-debug-0.log
+29 timing npm:load:logFile Completed in 7ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 94ms
+33 timing arborist:ctor Completed in 0ms
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 952ms
+36 timing idealTree:userRequests Completed in 3ms
+37 silly idealTree buildDeps
+38 silly fetch manifest react-star-rating-component@*
+39 timing arborist:ctor Completed in 1ms
+40 http fetch GET 200 https://registry.npmjs.org/react-star-rating-component 843ms (cache miss)
+41 silly fetch manifest react@^18.2.0
+42 http fetch GET 200 https://registry.npmjs.org/npm 4520ms (cache miss)
+43 http fetch GET 200 https://registry.npmjs.org/react 4200ms (cache miss)
+44 silly fetch manifest react@^16.2.0
+45 timing idealTree Completed in 6023ms
+46 timing command:install Completed in 6061ms
+47 notice
+47 notice New [33mminor[39m version of npm available! [31m8.11.0[39m -> [32m8.13.2[39m
+47 notice Changelog: [36mhttps://github.com/npm/cli/releases/tag/v8.13.2[39m
+47 notice Run [32mnpm install -g npm@8.13.2[39m to update!
+47 notice
+48 verbose stack Error: unable to resolve dependency tree
+48 verbose stack     at Arborist.[failPeerConflict] (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1428:25)
+48 verbose stack     at Arborist.[loadPeerSet] (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1394:34)
+48 verbose stack     at async Arborist.[buildDepStep] (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:976:11)
+48 verbose stack     at async Arborist.buildIdealTree (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:218:7)
+48 verbose stack     at async Promise.all (index 1)
+48 verbose stack     at async Arborist.reify (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:153:5)
+48 verbose stack     at async Install.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\install.js:156:5)
+48 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli.js:78:5)
+49 verbose cwd C:\Users\Extreme Pc\Desktop\GOMYCODE\React-Hooks\react-hooks
+50 verbose Windows_NT 10.0.18363
+51 verbose node v16.15.1
+52 verbose npm  v8.11.0
+53 error code ERESOLVE
+54 error ERESOLVE unable to resolve dependency tree
+55 error
+56 error While resolving: [1mreact-hooks[22m@[1m0.1.0[22m
+56 error Found: [1mreact[22m@[1m18.2.0[22m[2m[22m
+56 error [2mnode_modules/react[22m
+56 error   [1mreact[22m@"[1m^18.2.0[22m" from the root project
+56 error
+56 error Could not resolve dependency:
+56 error [35mpeer[39m [1mreact[22m@"[1m^16.2.0[22m" from [1mreact-star-rating-component[22m@[1m1.4.1[22m[2m[22m
+56 error [2mnode_modules/react-star-rating-component[22m
+56 error   [1mreact-star-rating-component[22m@"[1m*[22m" from the root project
+56 error
+56 error Fix the upstream dependency conflict, or retry
+56 error this command with --force, or --legacy-peer-deps
+56 error to accept an incorrect (and potentially broken) dependency resolution.
+56 error
+56 error See C:\Users\Extreme Pc\AppData\Local\npm-cache\eresolve-report.txt for a full report.
+57 verbose exit 1
+58 timing npm Completed in 6270ms
+59 verbose unfinished npm timer reify 1656880602121
+60 verbose unfinished npm timer reify:loadTrees 1656880602157
+61 verbose unfinished npm timer idealTree:buildDeps 1656880603113
+62 verbose unfinished npm timer idealTree:#root 1656880603114
+63 verbose code 1
+64 error A complete log of this run can be found in:
+64 error     C:\Users\Extreme Pc\AppData\Local\npm-cache\_logs\2022-07-03T20_36_41_926Z-debug-0.log
